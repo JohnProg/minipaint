@@ -1,7 +1,4 @@
 var express = require('express');
-
-
-var debug = require('debug')('myapp');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
@@ -28,12 +25,11 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
 
 
 
-app.set('port', process.env.PORT || 3000);
-
+// app.set('port', process.env.PORT || 3000);
+// app.listen(7000);
 //var server = app.listen(app.get('port'), function() {
 //  debug('Express server listening on port ' + server.address().port);
 //});
@@ -41,10 +37,10 @@ app.set('port', process.env.PORT || 3000);
 
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+console.log(123);
 
-
-http.listen(5000, function(){
-    console.log('listening on *:3000');
+http.listen(9500, function(){
+    console.log('listening on *:9000');
 });
 
 io.on('connection', function(socket){
