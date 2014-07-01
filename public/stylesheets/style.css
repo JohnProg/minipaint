@@ -1,0 +1,55 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background-color: #ffa500;
+}
+.divCentrado {
+  background: #fcfcfc;
+  width: 80%;
+  margin: 2em auto;
+}
+.controles {
+  padding-top: 300px;
+}
+.row {
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+.colors {
+  margin: 0;
+  padding: 0;
+}
+.colors li {
+  display: inline-block;
+}
+.colors li a {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+}
+a[data-color='red'] {
+  background: #f00;
+}
+a[data-color='yellow'] {
+  background: #ff0;
+}
+a[data-color='blue'] {
+  background: #00f;
+}
+a[data-color='black'] {
+  background: #000;
+}
+a[data-color='pink'] {
+  background: #ffc0cb;
+}
+a[data-color='skyblue'] {
+  background: #87ceeb;
+}
+a[data-color='white'] {
+  background: #fff;
+}
+#maxValue {
+  width: 35px;
+}
