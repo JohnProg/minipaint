@@ -40,7 +40,7 @@ var io = require('socket.io')(http);
 console.log(123);
 
 http.listen(9500, function(){
-    console.log('listening on *:9000');
+    console.log('listening on *:9500');
 });
 
 io.on('connection', function(socket){

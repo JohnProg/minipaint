@@ -1,36 +1,36 @@
 extends layout
-block content
+block content    
     #outer-wrap
         #inner-wrap
             header#top(role="banner")
                 div.block
                     h1.block-title Paint
-                    a#nav-open-btn.nav-btn(href="#nav") Book Navigation
+                    a#nav-open-btn.nav-btn(href="") x
 
             nav#nav(role="navigation")
                 div.block
                     h2.block-title Chapters
-                        ul.colors
-                            li
-                                a(data-color='green')
-                            li
-                                a(data-color='yellow')
-                            li
-                                a(data-color='red')
-                            li
-                                a(data-color='blue')
-                            li
-                                a(data-color='white')
-                            li
-                                a(data-color='black')
-                            li
-                                a(data-color='pink')
-                            li
-                                a(data-color='skyblue')
-                            .row
-                                input#maxValue(type="number" value=10)
-                                input#max(type='button')
-                                input#min(type='button')
+                    ul.colors
+                        li
+                            a(data-color='green')
+                        li
+                            a(data-color='yellow')
+                        li
+                            a(data-color='red')
+                        li
+                            a(data-color='blue')
+                        li
+                            a(data-color='white')
+                        li
+                            a(data-color='black')
+                        li
+                            a(data-color='pink')
+                        li
+                            a(data-color='skyblue')
+                        .row
+                            input#maxValue(type="number" value=10)
+                            input#max(type='button')
+                            input#min(type='button')
                     a#nav-close-btn.close-btn(href="#top") Return to Content
 
             section#main(role="main")
@@ -43,5 +43,6 @@ block content
                         a(href="") Derechos reservados
                     p.small Copyright ©
                         a(href="") John Paul
+    script(src='/javascripts/main.js')
 
 
